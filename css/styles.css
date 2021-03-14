@@ -91,7 +91,7 @@ body {
 }
 
 /*ЛОГО*/
-.logo-header {
+.logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -100,19 +100,19 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-header > span {
+.logo > span {
   color: var(--accent-color);
 }
 
 /*тень при фокусе*/
-.logo-header:focus {
+.logo:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--accent-color);
   border-radius: 4px;
 }
 
 /*лого в футере*/
-.logo-header.logo-footer {
+.footer__logo {
   width: fit-content;
   display: block;
   margin-bottom: 20px;
@@ -121,7 +121,7 @@ body {
 }
 
 /*тень при фокусе лого в футере*/
-.logo-header.logo-footer:focus {
+.footer__logo:focus {
   outline: none;
   box-shadow: 0 0 0 1px var(--accent-color);
   border-radius: 4px;
@@ -140,34 +140,28 @@ body {
   margin-left: 50px;
 }
 
-.site-nav a {
+/*увеличение активной зоны для элементов меню*/
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   transition: color 250ms var(--timing-fn);
 }
 
-/*изменение цвета элемента меню при наведении*/
-
-.site-nav a:hover {
-  color: var(--accent-color);
-}
-
-.site-nav a:focus {
-  color: var(--accent-color);
-  outline: none;
-}
-
 /*подсветка активной страницы*/
-.site-nav .current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
 /*нижнее подчеркивание активной страницы в хедере*/
-.site-nav__link.current {
+.site-nav__link--current {
   position: relative;
 }
 
-.site-nav .current::after {
+.site-nav__link--current::after {
   position: absolute;
   display: block;
 
@@ -181,11 +175,15 @@ body {
   background-color: var(--accent-color);
 }
 
-/*увеличение активной зоны для элементов меню*/
-.site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+/*изменение цвета элемента меню при наведении*/
+
+.site-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.site-nav__link:focus {
+  color: var(--accent-color);
+  outline: none;
 }
 
 /*обратная связь*/
@@ -201,21 +199,21 @@ body {
   margin-left: 50px;
 }
 
-.contacts-nav a {
+.contacts-nav__link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-nav__link {
   color: var(--text-color);
 
   transition: color 250ms var(--timing-fn);
 }
 
-.contacts-nav a:hover,
-.contacts-nav a:focus {
+.contacts-nav__link:hover,
+.contacts-nav__link:focus {
   color: var(--accent-color);
   outline: none;
-}
-
-.contacts-nav__link {
-  display: flex;
-  align-items: center;
 }
 
 /*иконки*/
@@ -296,7 +294,8 @@ body {
 .features,
 .job,
 .team,
-.clients {
+.clients,
+.pfl {
   padding-top: 94px;
   padding-bottom: 94px;
   letter-spacing: 0.03em;
@@ -1153,18 +1152,18 @@ body {
 }
 
 /*появление при ховере описания карточки*/
-.product .product__text-overlay {
+.product .product__descr {
   transition: opacity 250ms var(--timing-fn), transform 250ms var(--timing-fn);
 }
 
-.product:hover .product__text-overlay,
-.product:focus .product__text-overlay {
+.product:hover .product__descr,
+.product:focus .product__descr {
   opacity: 1;
   transform: translateY(-100%);
 }
 
 /*заголовки в списке портфолио*/
-.pfroduct__title {
+.product__name {
   margin: 0;
   margin-bottom: 4px;
 
@@ -1175,12 +1174,12 @@ body {
 }
 
 /*обертка подписей под фото*/
-.product__content {
+.product__meta {
   padding: 20px 24px;
 }
 
 /*текст в списке портфолио*/
-.product__text {
+.product__type {
   margin: 0;
 
   color: var(--text-color);
@@ -1196,7 +1195,7 @@ body {
 }
 
 /*всплывающий текст при ховере*/
-.product__text-overlay {
+.product__descr {
   position: absolute;
   display: flex;
   justify-content: center;
