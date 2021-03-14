@@ -136,7 +136,7 @@ body {
   padding: 0;
 }
 
-.site-nav .site-nav__item + .site-nav__item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -197,7 +197,7 @@ body {
   white-space: nowrap;
 }
 
-.contacts-nav .contacts-nav__item + .contacts-nav__item {
+.contacts-nav__item {
   margin-left: 50px;
 }
 
@@ -1119,7 +1119,7 @@ body {
 }
 
 /*примеры работ - портфолио*/
-.pfl-list {
+.pfl__list {
   display: flex;
   flex-wrap: wrap;
 
@@ -1130,14 +1130,14 @@ body {
 }
 
 /*сетка*/
-.pfl-item {
+.pfl__item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   border: 1px solid var(--background-pfl-card);
 }
 
-.pfl-link {
+.product {
   color: var(--primary-text-color);
   display: block;
 
@@ -1145,26 +1145,26 @@ body {
 }
 
 /*появление тени при наведении на карточку*/
-.pfl-link:hover,
-.pfl-link:focus {
+.product:hover,
+.product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
 }
 
 /*появление при ховере описания карточки*/
-.pfl-link .pfl-text-overlay {
+.product .product__text-overlay {
   transition: opacity 250ms var(--timing-fn), transform 250ms var(--timing-fn);
 }
 
-.pfl-link:hover .pfl-text-overlay,
-.pfl-link:focus .pfl-text-overlay {
+.product:hover .product__text-overlay,
+.product:focus .product__text-overlay {
   opacity: 1;
   transform: translateY(-100%);
 }
 
 /*заголовки в списке портфолио*/
-.pfl-title {
+.pfroduct__title {
   margin: 0;
   margin-bottom: 4px;
 
@@ -1175,12 +1175,12 @@ body {
 }
 
 /*обертка подписей под фото*/
-.pfl-content {
+.product__content {
   padding: 20px 24px;
 }
 
 /*текст в списке портфолио*/
-.pfl-text {
+.product__text {
   margin: 0;
 
   color: var(--text-color);
@@ -1190,13 +1190,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.pfl-thumb {
+.product__thumb {
   position: relative;
   overflow: hidden;
 }
 
 /*всплывающий текст при ховере*/
-.pfl-text-overlay {
+.product__text-overlay {
   position: absolute;
   display: flex;
   justify-content: center;
