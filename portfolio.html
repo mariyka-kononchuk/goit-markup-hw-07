@@ -14,29 +14,37 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container flex-header">
+      <div class="container page-header-flex">
         <nav class="main-nav">
-          <a href="./" class="logo-header"> <span>Web</span>Studio </a>
+          <a href="./" class="logo"> <span>Web</span>Studio </a>
           <ul class="site-nav">
-            <li class="item"><a href="./" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Студия</a>
             </li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="nav-icon">
-              <svg class="contacts-icon" width="16px" height="12px">
+          <li class="contacts-nav__item">
+            <a href="mailto:info@devstudio.com" class="contacts-nav__link">
+              <svg class="contacts-nav__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="+380961111111" class="nav-icon">
-              <svg class="contacts-icon" width="10px" height="16px">
+          <li class="contacts-nav__item">
+            <a href="+380961111111" class="contacts-nav__link">
+              <svg class="contacts-nav__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -235,9 +243,7 @@
     <footer class="footer">
       <div class="container flex-footer">
         <div class="footer-address">
-          <a href="./" class="logo-header logo-footer">
-            <span>Web</span>Studio
-          </a>
+          <a href="./" class="logo footer__logo"> <span>Web</span>Studio </a>
           <address class="flex-address hover">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <p>

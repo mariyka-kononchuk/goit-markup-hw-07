@@ -92,12 +92,13 @@ body {
 
 /*ЛОГО*/
 .logo {
-  color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+
+  color: var(--logo-color);
 }
 
 .logo > span {
@@ -458,8 +459,18 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*обертка подписей и иконок соцсетей под фото*/
+.team__meta {
+  padding-top: var(--card-set-gap);
+  padding-bottom: var(--card-set-gap);
+  padding-left: 32px;
+  padding-right: 32px;
+
+  background-color: var(--white-color);
+}
+
 /*список ссылок на социальные сети*/
-.team-icon-list {
+.social-list {
   display: flex;
   justify-content: space-between;
 
@@ -469,16 +480,7 @@ body {
   color: var(--icon-color);
 }
 
-/*иконки*/
-.team-icon {
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-
-  fill: currentColor;
-}
-
-.team-icon-hover {
+.social-list__link {
   display: block;
 
   padding: 0;
@@ -493,27 +495,26 @@ body {
     color 250ms var(--timing-fn);
 }
 
-.team-icon-hover:hover,
-.team-icon-hover:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
 /*тень при фокусе*/
-.team-icon-hover:focus {
+.social-list__link:focus {
   outline: none;
   box-shadow: 0 0 0 1px var(--background-button-portfolio);
   border-radius: 50%;
 }
 
-/*обертка подписей и иконок соцсетей под фото*/
-.team-content {
-  padding-top: var(--card-set-gap);
-  padding-bottom: var(--card-set-gap);
-  padding-left: 32px;
-  padding-right: 32px;
+/*иконки*/
+.social-list__icon {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
 
-  background-color: var(--white-color);
+  fill: currentColor;
 }
 
 /*---ПОСТОЯННЫЕ КЛИЕНТЫ---*/
@@ -656,7 +657,7 @@ body {
 }
 
 /*заголовок*/
-.form-title {
+.form__title {
   display: inline-block;
   margin-bottom: 12px;
 
@@ -669,38 +670,35 @@ body {
   color: var(--primary-text-color);
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 10px;
 }
 
-.form-field ::placeholder {
+.form__field ::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-label {
+.form__label {
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
 }
 
-.form-wrapper {
+.form__wrapper {
   position: relative;
 }
 
-.form-wrapper input {
-  width: 100%;
-}
-
-.form-input {
+.form__input {
   margin: 0;
   padding: 0;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 12px;
   padding-left: 42px;
+  width: 100%;
 
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -708,19 +706,19 @@ body {
   transition: color 250ms var(--timing-fn);
 }
 
-.form-input:focus {
+.form__input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
   caret-color: var(--accent-color);
 }
 
 /*изменение цвета иконки при фокусе input*/
-.form-input:focus ~ .form-icon {
+.form__input:focus ~ .form__icon {
   color: var(--accent-color);
 }
 
 /*иконки полей модального окна*/
-.form-icon {
+.form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -736,7 +734,7 @@ body {
 }
 
 /*поле комментария*/
-.comment {
+.form__comment {
   padding: 12px 16px;
 
   box-sizing: border-box;
@@ -744,7 +742,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.comment:focus {
+.form__comment:focus {
   outline: none;
   border: 1px solid var(--accent-color);
   caret-color: var(--accent-color);
@@ -902,7 +900,7 @@ body {
   margin-left: 70px;
 }
 
-.footer-social-title {
+.footer-social__title {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -913,54 +911,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*список ссылок на социальные сети*/
-.footer-social-list {
-  display: flex;
-  justify-content: space-between;
-
+/*ширина списка икононк соцсетей в футере*/
+.footer__social-list {
   min-width: 206px;
-  margin: 0;
-  padding: 0;
-
-  color: var(--white-color);
 }
 
-/*иконки социальных сетей*/
-.footer-icon {
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-
-  fill: currentColor;
-}
-
-.footer-social-link {
-  display: block;
-  padding: 0;
-  margin: 0;
-
+/*другой фон иконок соцсетей в футере*/
+.social-list__link--color {
   background-color: var(--footer-icon-background);
-  border-radius: 50%;
   color: var(--white-color);
-
-  line-height: 0;
-
-  transition: background-color 250ms var(--timing-fn),
-    color 250ms var(--timing-fn);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  border-radius: 50%;
-}
-
-/*тень при фокусе*/
-.footer-social-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px var(--background-footer-color);
-  border-radius: 50%;
 }
 
 /*изменение цвета элементов контактов при наведении*/
