@@ -1,0 +1,154 @@
+/*---ФУТЕР---*/
+
+.footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 252px;
+
+  background-color: var(--background-footer-color);
+  color: var(--white-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.footer p {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 9px;
+}
+
+.footer p:last-child {
+  margin-bottom: 0;
+}
+
+.footer .contacts {
+  padding: 0;
+  color: var(--footer-text-color);
+
+  transition: color 250ms var(--timing-fn);
+}
+
+/*тень при фокусе*/
+.contacts:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}
+
+/*--СОЦИАЛЬНЫЕ СЕТИ--*/
+
+.footer-social {
+  margin-left: 86px;
+}
+
+.footer-social__title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/*ширина списка икононк соцсетей в футере*/
+.footer__social-list {
+  min-width: 206px;
+}
+
+/*другой фон иконок соцсетей в футере*/
+.social-list__link--color {
+  background-color: var(--footer-icon-background);
+  color: var(--white-color);
+}
+
+/*изменение цвета элементов контактов при наведении*/
+.hover a:hover,
+.hover a:focus {
+  color: var(--accent-color);
+}
+
+/*--ФОРМА:ПОДПИСЫВАЙТЕСЬ--*/
+.footer-sign {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.footer-form-title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+
+  width: 358px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*кнопка формы футера*/
+.footer__button {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
+}
+
+.footer-form-icon {
+  margin-left: 10px;
+}
+
+/*позиционирование контента кнопки*/
+.footer-button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*позиционирование контента футера*/
+.flex-footer {
+  display: flex;
+  align-items: baseline;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*позиционирование контента адреса*/
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*позиционирование адреса*/
+.flex-address {
+  display: flex;
+  flex-direction: column;
+}

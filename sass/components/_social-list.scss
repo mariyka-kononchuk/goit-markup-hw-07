@@ -1,0 +1,47 @@
+/*список ссылок на социальные сети*/
+.social-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--icon-color);
+}
+
+.social-list__link {
+  display: block;
+
+  padding: 0;
+  margin: 0;
+
+  color: var(--icon-color);
+
+  line-height: 0;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-fn),
+    color 250ms var(--timing-fn);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/*тень при фокусе*/
+.social-list__link:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--background-button-portfolio);
+  border-radius: 50%;
+}
+
+/*иконки*/
+.social-list__icon {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  fill: currentColor;
+}

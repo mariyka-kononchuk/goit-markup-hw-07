@@ -1,0 +1,41 @@
+/*---ГЕРОЙ---*/
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      var(--background-hero-gradient),
+      var(--background-hero-gradient)
+    ),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-hero-color);
+
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 696px;
+
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}

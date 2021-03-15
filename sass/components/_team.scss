@@ -1,0 +1,55 @@
+/*---СПИСОК КОМАНДЫ---*/
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+
+  line-height: 1.19;
+}
+
+/*заголовки*/
+.team__list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*текст*/
+.team__list p {
+  margin-bottom: 16px;
+
+  color: var(--text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*сетка*/
+.team__item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*обертка подписей и иконок соцсетей под фото*/
+.team__meta {
+  padding-top: var(--card-set-gap);
+  padding-bottom: var(--card-set-gap);
+  padding-left: 32px;
+  padding-right: 32px;
+
+  background-color: var(--white-color);
+}

@@ -1,0 +1,50 @@
+/*---ПОСТОЯННЫЕ КЛИЕНТЫ---*/
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+
+  line-height: 1.19;
+}
+
+/*сетка*/
+.clients__item {
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+
+  transition: color 250ms var(--timing-fn), border 250ms var(--timing-fn);
+}
+
+/*изменение цвета элемента меню при наведении*/
+.clients__link:hover,
+.clients__link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+/*тень при фокусе*/
+.clients__link:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}

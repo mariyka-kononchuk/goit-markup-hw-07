@@ -16,8 +16,10 @@
   <body>
     <header class="page-header">
       <div class="container page-header-flex">
-        <nav class="main-nav">
-          <a href="./" class="logo"> <span>Web</span>Studio </a>
+        <nav class="page-header__nav">
+          <a href="./" class="logo">
+            <span class="logo--color">Web</span>Studio
+          </a>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./" class="site-nav__link site-nav__link--current">
@@ -56,9 +58,9 @@
     <main>
       <!--Герой-->
       <section class="hero">
-        <div class="container hero-content">
+        <div class="container hero__content">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <a class="hero__button" href="#" data-modal-open>Заказать услугу</a>
+          <a class="button" href="#" data-modal-open>Заказать услугу</a>
         </div>
       </section>
 
@@ -71,8 +73,8 @@
               <svg class="features__icon">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
-              <h3>Внимание к деталям</h3>
-              <p>
+              <h3 class="features__subtitle">Внимание к деталям</h3>
+              <p class="features__descr">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
@@ -81,8 +83,8 @@
               <svg class="features__icon">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
-              <h3>Пунктуальность</h3>
-              <p>
+              <h3 class="features__subtitle">Пунктуальность</h3>
+              <p class="features__descr">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
@@ -91,8 +93,8 @@
               <svg class="features__icon">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
-              <h3>Планирование</h3>
-              <p>
+              <h3 class="features__subtitle">Планирование</h3>
+              <p class="features__descr">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
@@ -101,8 +103,8 @@
               <svg class="features__icon">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
-              <h3>Современные технологии</h3>
-              <p>
+              <h3 class="features__subtitle">Современные технологии</h3>
+              <p class="features__descr">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -398,7 +400,9 @@
               </label>
             </div>
             <div>
-              <button type="submit" class="form-button">Отправить</button>
+              <button type="submit" class="button form__button">
+                Отправить
+              </button>
             </div>
           </form>
           <button class="button-close" data-modal-close>
@@ -413,10 +417,13 @@
       </div>
     </main>
 
+    <!--ФУТЕР-->
     <footer class="footer">
       <div class="container flex-footer">
         <div class="footer-address">
-          <a href="./" class="logo footer__logo"> <span>Web</span>Studio </a>
+          <a href="./" class="logo footer__logo">
+            <span class="logo--color">Web</span>Studio
+          </a>
           <address class="flex-address hover">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <p>
@@ -489,7 +496,7 @@
                 class="footer-form-input"
               />
             </div>
-            <button type="submit" class="footer-form-button">
+            <button type="submit" class="button footer__button">
               <div class="footer-button-flex">
                 <span>Подписаться</span>
                 <svg class="footer-form-icon" width="24px" height="24px">

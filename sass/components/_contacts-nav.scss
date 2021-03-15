@@ -1,0 +1,35 @@
+/*обратная связь*/
+.contacts-nav {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.contacts-nav__item {
+  margin-left: 50px;
+}
+
+.contacts-nav__link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-nav__link {
+  color: var(--text-color);
+
+  transition: color 250ms var(--timing-fn);
+}
+
+.contacts-nav__link:hover,
+.contacts-nav__link:focus {
+  color: var(--accent-color);
+  outline: none;
+}
+
+/*иконки*/
+.contacts-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
