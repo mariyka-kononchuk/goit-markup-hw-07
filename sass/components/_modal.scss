@@ -54,19 +54,23 @@
   line-height: 0;
 
   transition: color 250ms $timing-fn;
-}
 
-.button-close-icon {
-  fill: currentColor;
-}
-
-.button-close:hover,
-.button-close:focus {
+  &:hover {
   color: $accent-color;
+  }
+
+  /*тень кнопки закрытия при фокусе*/
+  &:focus {
+    color: $accent-color;
+    outline: none;
+    box-shadow: 0 0 0 1px $accent-color;
+  }
+
+  &--color {
+  fill: currentColor;
+  }
 }
 
-/*тень кнопки закрытия при фокусе*/
-.button-close:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $accent-color;
-}
+
+
+

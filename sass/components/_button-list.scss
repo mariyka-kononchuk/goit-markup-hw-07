@@ -1,5 +1,22 @@
-/*радио-кнопки на странице Портфолио*/
-.button-pfl {
+/*список радио-кнопок*/
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+/*расстояние между кнопками, кроме последней*/
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-list__button {
   display: inline-block;
 
   border-radius: 4px;
@@ -20,32 +37,17 @@
   cursor: pointer;
   transition: background-color 250ms $timing-fn,
     color 250ms $timing-fn, box-shadow 250ms $timing-fn;
+
+    /*изменение цвета кнопки при наведении*/
+  &:hover,
+  &:focus {
+    color: $white-сolor;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+} 
 }
 
-/*изменение цвета кнопки при наведении*/
-.button-pfl:hover,
-.button-pfl:focus {
-  color: $white-сolor;
-  background-color: $accent-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: none;
-}
 
-/*список радио-кнопок*/
-.button-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  margin-bottom: 34px;
-  padding: 0;
-  padding-bottom: 16px;
-}
-
-/*расстояние между кнопками, кроме последней*/
-.button-item:not(:last-child) {
-  margin-right: 8px;
-}

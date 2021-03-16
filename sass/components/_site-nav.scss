@@ -20,39 +20,39 @@
   color: var(--primary-text-color);
 
   transition: color 250ms $timing-fn;
-}
 
-/*подсветка активной страницы*/
-.site-nav__link--current {
-  color: $accent-color;
-}
+  /*подсветка активной страницы*/
+  &--current {
+    color: $accent-color;
+  }
 
-/*нижнее подчеркивание активной страницы в хедере*/
-.site-nav__link--current {
-  position: relative;
-}
+  /*нижнее подчеркивание активной страницы в хедере*/
+  &--current {
+    position: relative;
+  }
 
-.site-nav__link--current::after {
-  position: absolute;
-  display: block;
+  &--current::after {
+    position: absolute;
+    display: block;
 
-  bottom: -1px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
 
-  background-color: $accent-color;
-}
+    background-color: $accent-color;
+  }
 
-/*изменение цвета элемента меню при наведении*/
+  /*изменение цвета элемента меню при наведении*/
 
-.site-nav__link:hover {
-  color: $accent-color;
-}
+  &:hover {
+    color: $accent-color;
+  }
 
-.site-nav__link:focus {
-  color: $accent-color;
-  outline: none;
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
 }

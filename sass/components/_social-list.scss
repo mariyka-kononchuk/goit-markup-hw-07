@@ -9,6 +9,7 @@
   color: $icon-color;
 }
 
+/*ссылка на соцсеть*/
 .social-list__link {
   display: block;
 
@@ -22,22 +23,30 @@
 
   transition: background-color 250ms $timing-fn,
     color 250ms $timing-fn;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-сolor;
+  }
+
+  /*тень при фокусе*/
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $background-button-portfolio;
+    border-radius: 50%;
+  }
+
+  /*другой фон ссылки на соцсеть в футере*/
+  &--color {
+  background-color: $footer-icon-background;
   color: $white-сolor;
-}
+  }
+} 
 
-/*тень при фокусе*/
-.social-list__link:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $background-button-portfolio;
-  border-radius: 50%;
-}
 
-/*иконки*/
+
+/*иконки соцсетей*/
 .social-list__icon {
   padding: 12px;
   width: 44px;

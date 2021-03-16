@@ -15,6 +15,26 @@
   line-height: 1.714;
 }
 
+.footer__title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/*позиционирование контента футера*/
+.flex-footer {
+  display: flex;
+  align-items: baseline;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer p {
   display: inline-block;
   width: fit-content;
@@ -25,52 +45,40 @@
   margin-bottom: 0;
 }
 
-.footer .contacts {
+/*адрес в футере*/
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-address__contacts {
   padding: 0;
   color: $footer-text-color;
 
   transition: color 250ms $timing-fn;
+
+  /*тень при фокусе*/
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $accent-color;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
-/*тень при фокусе*/
-.contacts:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $accent-color;
-  border-radius: 4px;
-}
-
-/*--СОЦИАЛЬНЫЕ СЕТИ--*/
+/*--СОЦИАЛЬНЫЕ СЕТИ в футере--*/
 
 .footer-social {
   margin-left: 86px;
 }
 
-.footer-social__title {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-/*ширина списка икононк соцсетей в футере*/
+/*иконки соцсетей в футере*/
 .footer__social-list {
   min-width: 206px;
-}
-
-/*другой фон иконок соцсетей в футере*/
-.social-list__link--color {
-  background-color: $footer-icon-background;
-  color: $white-сolor;
-}
-
-/*изменение цвета элементов контактов при наведении*/
-.hover a:hover,
-.hover a:focus {
-  color: $accent-color;
 }
 
 /*--ФОРМА:ПОДПИСЫВАЙТЕСЬ--*/
@@ -80,22 +88,13 @@
   margin-left: 93px;
 }
 
-.footer-form-title {
-  display: inline-block;
-  margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
 
 .footer-form {
   display: flex;
 }
 
-.footer-form-input {
+.footer-form__input {
   margin: 0;
   margin-right: 12px;
   padding: 0;
@@ -120,7 +119,7 @@
   min-width: 200px;
 }
 
-.footer-form-icon {
+.footer-form__icon {
   margin-left: 10px;
 }
 
@@ -131,24 +130,6 @@
   align-items: center;
 }
 
-/*позиционирование контента футера*/
-.flex-footer {
-  display: flex;
-  align-items: baseline;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
-/*позиционирование контента адреса*/
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-/*позиционирование адреса*/
-.flex-address {
-  display: flex;
-  flex-direction: column;
-}

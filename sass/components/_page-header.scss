@@ -16,13 +16,14 @@
   font-weight: 500;
 }
 
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+
+/*позиционирование элементов шапки*/
 .page-header-flex {
   display: flex;
   align-items: center;
   min-height: 80px;
-}
-
-.page-header__nav {
-  display: flex;
-  align-items: center;
 }
