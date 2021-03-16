@@ -10,13 +10,13 @@
 }
 
 .logo--color {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*тень при фокусе*/
 .logo:focus {
   outline: none;
-  box-shadow: 0 0 0 2px $accent-сolor;
+  box-shadow: 0 0 0 2px $accent-color;
   border-radius: 4px;
 }
 
@@ -32,6 +32,6 @@
 /*тень при фокусе лого в футере*/
 .footer__logo:focus {
   outline: none;
-  box-shadow: 0 0 0 1px $accent-сolor;
+  box-shadow: 0 0 0 1px $accent-color;
   border-radius: 4px;
 }

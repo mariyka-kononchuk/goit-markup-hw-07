@@ -35,7 +35,7 @@
 /*тень при фокусе*/
 .contacts:focus {
   outline: none;
-  box-shadow: 0 0 0 1px $accent-сolor;
+  box-shadow: 0 0 0 1px $accent-color;
   border-radius: 4px;
 }
 
@@ -70,7 +70,7 @@
 /*изменение цвета элементов контактов при наведении*/
 .hover a:hover,
 .hover a:focus {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*--ФОРМА:ПОДПИСЫВАЙТЕСЬ--*/

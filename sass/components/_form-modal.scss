@@ -65,13 +65,13 @@
 
 .form__input:focus {
   outline: none;
-  border: 1px solid $accent-сolor;
-  caret-color: $accent-сolor;
+  border: 1px solid $accent-color;
+  caret-color: $accent-color;
 }
 
 /*изменение цвета иконки при фокусе input*/
 .form__input:focus ~ .form__icon {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*иконки полей модального окна*/
@@ -101,8 +101,8 @@
 
 .form__comment:focus {
   outline: none;
-  border: 1px solid $accent-сolor;
-  caret-color: $accent-сolor;
+  border: 1px solid $accent-color;
+  caret-color: $accent-color;
 }
 
 /*соглашение на рассылку*/
@@ -170,7 +170,7 @@
   margin-left: 4px;
   text-decoration: underline;
 
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*не разрешает пользователю менять размер окна для сообщения*/

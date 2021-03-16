@@ -62,11 +62,11 @@
 
 .button-close:hover,
 .button-close:focus {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*тень кнопки закрытия при фокусе*/
 .button-close:focus {
   outline: none;
-  box-shadow: 0 0 0 1px $accent-сolor;
+  box-shadow: 0 0 0 1px $accent-color;
 }

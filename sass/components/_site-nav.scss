@@ -24,7 +24,7 @@
 
 /*подсветка активной страницы*/
 .site-nav__link--current {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 /*нижнее подчеркивание активной страницы в хедере*/
@@ -43,16 +43,16 @@
   height: 4px;
   border-radius: 4px;
 
-  background-color: $accent-сolor;
+  background-color: $accent-color;
 }
 
 /*изменение цвета элемента меню при наведении*/
 
 .site-nav__link:hover {
-  color: $accent-сolor;
+  color: $accent-color;
 }
 
 .site-nav__link:focus {
-  color: $accent-сolor;
+  color: $accent-color;
   outline: none;
 }

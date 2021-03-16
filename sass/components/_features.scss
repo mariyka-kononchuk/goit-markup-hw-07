@@ -13,7 +13,7 @@
 
 /*сетка*/
 .features__item {
-  flex-basis: calc(100% / 4 - #{$card-set-gap};
+  flex-basis: calc(100% / 4 - #{$card-set-gap});
   margin-top: #{$card-set-gap};
   margin-left: #{$card-set-gap};
 }

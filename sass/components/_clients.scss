@@ -34,8 +34,8 @@
 /*изменение цвета элемента меню при наведении*/
 .clients__link:hover,
 .clients__link:focus {
-  color: $accent-сolor;
-  border: 1px solid $accent-сolor;
+  color: $accent-color;
+  border: 1px solid $accent-color;
 }
 
 .clients__icon {
@@ -45,6 +45,6 @@
 /*тень при фокусе*/
 .clients__link:focus {
   outline: none;
-  box-shadow: 0 0 0 1px $accent-сolor;
+  box-shadow: 0 0 0 1px $accent-color;
   border-radius: 4px;
 }
