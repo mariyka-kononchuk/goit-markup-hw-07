@@ -17,14 +17,14 @@
 }
 
 .contacts-nav__link {
-  color: var(--text-color);
+  color: $text-color;
 
-  transition: color 250ms var(--timing-fn);
+  transition: color 250ms $timing-fn;
 }
 
 .contacts-nav__link:hover,
 .contacts-nav__link:focus {
-  color: var(--accent-color);
+  color: $accent-сolor;
   outline: none;
 }
 

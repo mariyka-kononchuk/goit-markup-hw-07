@@ -11,8 +11,8 @@
   align-items: center;
   text-align: center;
 
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: $white-сolor;
+  background-color: $accent-сolor;
   border-radius: 4px;
   border-width: 0;
   cursor: pointer;
@@ -21,6 +21,6 @@
 /*тень при фокусе*/
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--white-color);
+  box-shadow: 0 0 0 2px $white-сolor;
   border-radius: 4px;
 }

@@ -19,12 +19,12 @@
 
   color: var(--primary-text-color);
 
-  transition: color 250ms var(--timing-fn);
+  transition: color 250ms $timing-fn;
 }
 
 /*подсветка активной страницы*/
 .site-nav__link--current {
-  color: var(--accent-color);
+  color: $accent-сolor;
 }
 
 /*нижнее подчеркивание активной страницы в хедере*/
@@ -43,16 +43,16 @@
   height: 4px;
   border-radius: 4px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-сolor;
 }
 
 /*изменение цвета элемента меню при наведении*/
 
 .site-nav__link:hover {
-  color: var(--accent-color);
+  color: $accent-сolor;
 }
 
 .site-nav__link:focus {
-  color: var(--accent-color);
+  color: $accent-сolor;
   outline: none;
 }

@@ -6,8 +6,8 @@
   margin-right: auto;
   min-height: 252px;
 
-  background-color: var(--background-footer-color);
-  color: var(--white-color);
+  background-color: $background-footer-color;
+  color: $white-сolor;
 
   font-style: normal;
   font-weight: 400;
@@ -27,15 +27,15 @@
 
 .footer .contacts {
   padding: 0;
-  color: var(--footer-text-color);
+  color: $footer-text-color;
 
-  transition: color 250ms var(--timing-fn);
+  transition: color 250ms $timing-fn;
 }
 
 /*тень при фокусе*/
 .contacts:focus {
   outline: none;
-  box-shadow: 0 0 0 1px var(--accent-color);
+  box-shadow: 0 0 0 1px $accent-сolor;
   border-radius: 4px;
 }
 
@@ -63,14 +63,14 @@
 
 /*другой фон иконок соцсетей в футере*/
 .social-list__link--color {
-  background-color: var(--footer-icon-background);
-  color: var(--white-color);
+  background-color: $footer-icon-background;
+  color: $white-сolor;
 }
 
 /*изменение цвета элементов контактов при наведении*/
 .hover a:hover,
 .hover a:focus {
-  color: var(--accent-color);
+  color: $accent-сolor;
 }
 
 /*--ФОРМА:ПОДПИСЫВАЙТЕСЬ--*/

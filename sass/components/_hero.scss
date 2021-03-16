@@ -7,16 +7,16 @@
 
   background-image: linear-gradient(
       to right,
-      var(--background-hero-gradient),
-      var(--background-hero-gradient)
+      $background-hero-gradient,
+      $background-hero-gradient
     ),
-    url('../images/hero.jpg');
+    url('../../images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--background-hero-color);
+  background-color: $background-hero-color;
 
-  color: var(--white-color);
+  color: $white-сolor;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -27,7 +27,7 @@
   margin-left: auto;
   max-width: 696px;
 
-  color: var(--white-color);
+  color: $white-сolor;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

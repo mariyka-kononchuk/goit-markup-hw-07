@@ -6,15 +6,15 @@
 
   padding: 0;
   margin: 0;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * #{$card-set-gap});
+  margin-left: calc(-1 * #{$card-set-gap});
 }
 
 /*сетка*/
 .job__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-top: #{$card-set-gap};
+  margin-left: #{$card-set-gap};
 
   position: relative;
 }
@@ -27,8 +27,8 @@
   padding-bottom: 27px;
   width: 100%;
 
-  color: var(--white-color);
-  background-color: var(--background-features-title);
+  color: $white-сolor;
+  background-color: $background-features-title;
 
   font-weight: 700;
   font-size: 14px;

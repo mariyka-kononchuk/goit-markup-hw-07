@@ -6,17 +6,17 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
 
-  color: var(--logo-color);
+  color: $logo-color;
 }
 
 .logo--color {
-  color: var(--accent-color);
+  color: $accent-сolor;
 }
 
 /*тень при фокусе*/
 .logo:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--accent-color);
+  box-shadow: 0 0 0 2px $accent-сolor;
   border-radius: 4px;
 }
 
@@ -26,12 +26,12 @@
   display: block;
   margin-bottom: 20px;
 
-  color: var(--white-color);
+  color: $white-сolor;
 }
 
 /*тень при фокусе лого в футере*/
 .footer__logo:focus {
   outline: none;
-  box-shadow: 0 0 0 1px var(--accent-color);
+  box-shadow: 0 0 0 1px $accent-сolor;
   border-radius: 4px;
 }
