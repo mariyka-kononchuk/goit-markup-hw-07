@@ -1080,7 +1080,7 @@ body {
   /*при выборе checkbox исчезает бордер*/
 }
 
-.policy__icon use {
+.policy__icon--display {
   display: none;
 }
 

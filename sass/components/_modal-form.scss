@@ -161,12 +161,12 @@
   border-radius: 2px;
 
   /*скрываем иконку чекбокса*/
-  & use {
+  &--display {
     display: none;
   }
 
   /*при выборе checkbox появляется иконка*/
-  .policy__input:checked + & use{
+  .policy__input:checked + & use {
   display: inline-block;
   }
 
@@ -175,7 +175,6 @@
   border: none;
   } 
 }
-
 
 .policy__link {
   margin-left: 4px;

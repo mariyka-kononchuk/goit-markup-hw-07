@@ -33,7 +33,7 @@
   /*тень при фокусе*/
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 1px $background-button-portfolio;
+    box-shadow: 0 0 0 1px $portfolio-button-background;
     border-radius: 50%;
   }
 

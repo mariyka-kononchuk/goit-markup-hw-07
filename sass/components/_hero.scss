@@ -7,14 +7,14 @@
 
   background-image: linear-gradient(
       to right,
-      $background-hero-gradient,
-      $background-hero-gradient
+      $hero-background-gradient,
+      $hero-background-gradient
     ),
     url('./../images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $background-hero-color;
+  background-color: $hero-background-color;
 
   color: $white-сolor;
   letter-spacing: 0.06em;
