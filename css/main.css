@@ -327,31 +327,14 @@ body {
   margin-right: auto;
 }
 
-/*СЕКЦИИ*/
-.features,
-.job,
-.team,
-.clients,
-.pfl {
+/*секции*/
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
   letter-spacing: 0.03em;
 }
 
-.features {
-  padding-bottom: 0;
-}
-
-/*фон для секции команды*/
-.team {
-  background-color: #f5f4fa;
-}
-
-.features__title,
-.team__title,
-.job__title,
-.team__title,
-.clients__title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -596,6 +579,10 @@ body {
 }
 
 /*---ПЕРЕЧЕНЬ ОСОБЕННОСТЕЙ---*/
+.features {
+  padding-bottom: 0;
+}
+
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,6 +669,11 @@ body {
 }
 
 /*---СПИСОК КОМАНДЫ---*/
+/*фон для секции команды*/
+.team {
+  background-color: #f5f4fa;
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -993,11 +985,6 @@ body {
   caret-color: #2196f3;
 }
 
-/*изменение цвета иконки при фокусе input*/
-.form__input:focus ~ .form__icon {
-  color: #2196f3;
-}
-
 /*иконки полей модального окна*/
 .form__icon {
   position: absolute;
@@ -1011,6 +998,11 @@ body {
           transform: translateY(-50%);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*изменение цвета иконки при фокусе input*/
+}
+
+.form__input:focus ~ .form__icon {
+  color: #2196f3;
 }
 
 /*поле комментария*/
@@ -1020,6 +1012,7 @@ body {
           box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
 }
 
 .form__comment:focus {
@@ -1029,7 +1022,7 @@ body {
 }
 
 /*соглашение на рассылку*/
-.policy-field {
+.policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,7 +1035,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.policy {
+.policy__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1055,21 +1048,8 @@ body {
   margin-bottom: 30px;
 }
 
-.policy-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-}
-
-.policy-icon use {
-  display: none;
-}
-
 /*скрывается checkbox браузера*/
-.policy-input {
+.policy__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1083,25 +1063,39 @@ body {
   overflow: hidden;
 }
 
-/*при выборе checkbox появляется иконка*/
-.policy-input:checked + .policy-icon use {
+/*при выборе checkbox появляется иконка
+.policy__input:checked + .policy__icon use {
+  display: inline-block;
+*/
+/*иконка чекбокса*/
+.policy__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  /*скрываем иконку чекбокса*/
+  /*при выборе checkbox появляется иконка*/
+  /*при выборе checkbox исчезает бордер*/
+}
+
+.policy__icon use {
+  display: none;
+}
+
+.policy__input:checked + .policy__icon use {
   display: inline-block;
 }
 
-/*при выборе checkbox исчезает бордер*/
-.policy-input:checked + .policy-icon {
+.policy__input:checked + .policy__icon {
   border: none;
 }
 
-.policy-link {
+.policy__link {
   margin-left: 4px;
   text-decoration: underline;
   color: #2196f3;
-}
-
-/*не разрешает пользователю менять размер окна для сообщения*/
-.textaria {
-  resize: none;
 }
 
 /*кнопка формы*/

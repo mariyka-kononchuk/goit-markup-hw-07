@@ -13,31 +13,14 @@ body {
   margin-right: auto;
 }
 
-/*СЕКЦИИ*/
-.features,
-.job,
-.team,
-.clients,
-.pfl {
+/*секции*/
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
   letter-spacing: 0.03em;
 }
 
-.features {
-  padding-bottom: 0;
-}
-
-/*фон для секции команды*/
-.team {
-  background-color: $background-button-portfolio;
-}
-
-.features__title,
-.team__title,
-.job__title,
-.team__title,
-.clients__title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
 

@@ -64,9 +64,9 @@
       </section>
 
       <!--Особенности-->
-      <section class="features">
+      <section class="section features">
         <div class="container">
-          <h2 class="features__title visually-hidden">Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="features__list">
             <li class="features__item">
               <svg class="features__icon">
@@ -113,9 +113,9 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="job">
+      <section class="section job">
         <div class="container">
-          <h2 class="job__title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="job__list">
             <li class="job__item">
               <img src="./images/desktope.jpg" alt="десктопные приложения" />
@@ -134,9 +134,9 @@
       </section>
 
       <!--Наша команда-->
-      <section class="team">
+      <section class="section team">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-member">
               <img src="./images/igor.jpg" alt="Игорь Демьяненко" />
@@ -291,9 +291,9 @@
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="clients">
+      <section class="section clients">
         <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__link" href="#">
@@ -388,14 +388,17 @@
                 class="form__comment"
               ></textarea>
             </div>
-            <div class="policy-field">
-              <label class="policy">
-                <input type="checkbox" name="policy" class="policy-input" />
-                <svg class="policy-icon" width="16px" height="15px">
-                  <use href="./images/icons.svg#icon-check"></use>
+            <div class="policy">
+              <label class="policy__field">
+                <input type="checkbox" name="policy" class="policy__input" />
+                <svg class="policy__icon" width="16px" height="15px">
+                  <use
+                    class="policy__icon--display"
+                    href="./images/icons.svg#icon-check"
+                  ></use>
                 </svg>
                 Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="policy-link">Условия договора</a>
+                <a href="#" class="policy__link">Условия договора</a>
               </label>
             </div>
             <div>

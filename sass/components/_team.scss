@@ -1,5 +1,9 @@
 /*---СПИСОК КОМАНДЫ---*/
 
+/*фон для секции команды*/
+.team {
+  background-color: $background-button-portfolio;
+}
 .team__list {
   display: flex;
   flex-wrap: wrap;

@@ -38,8 +38,6 @@
   }
 }
 
-
-
 .form__label {
   margin: 0;
   padding: 0;
@@ -71,11 +69,6 @@
   }
 }
 
-/*изменение цвета иконки при фокусе input*/
-.form__input:focus ~ .form__icon {
-  color: $accent-color;
-}
-
 /*иконки полей модального окна*/
 .form__icon {
   position: absolute;
@@ -90,6 +83,11 @@
 
   transform: translateY(-50%);
   transition: color 250ms $timing-fn;
+
+  /*изменение цвета иконки при фокусе input*/
+  .form__input:focus ~& {
+  color: $accent-color;
+  }
 }
 
 /*поле комментария*/
@@ -100,6 +98,8 @@
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
+  resize: none;
+
   &:focus {
   outline: none;
   border: 1px solid $accent-color;
@@ -107,10 +107,8 @@
   }
 }
 
-
-
 /*соглашение на рассылку*/
-.policy-field {
+.policy {
   display: flex;
   justify-content: center;
 
@@ -120,7 +118,7 @@
   letter-spacing: 0.03em;
 }
 
-.policy {
+.policy__field {
   display: flex;
   align-items: center;
   margin: 0;
@@ -130,22 +128,8 @@
   margin-bottom: 30px;
 }
 
-.policy-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-
-  border: 2px solid $primary-text-color;
-  border-radius: 2px;
-}
-
-.policy-icon use {
-  display: none;
-}
-
 /*скрывается checkbox браузера*/
-.policy-input {
+.policy__input {
   position: absolute;
 
   width: 1px;
@@ -160,26 +144,44 @@
   overflow: hidden;
 }
 
-/*при выборе checkbox появляется иконка*/
-.policy-input:checked + .policy-icon use {
+/*при выборе checkbox появляется иконка
+.policy__input:checked + .policy__icon use {
   display: inline-block;
-}
+*/
 
-/*при выборе checkbox исчезает бордер*/
-.policy-input:checked + .policy-icon {
+
+/*иконка чекбокса*/
+.policy__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid $primary-text-color;
+  border-radius: 2px;
+
+  /*скрываем иконку чекбокса*/
+  & use {
+    display: none;
+  }
+
+  /*при выборе checkbox появляется иконка*/
+  .policy__input:checked + & use{
+  display: inline-block;
+  }
+
+  /*при выборе checkbox исчезает бордер*/
+  .policy__input:checked + & {
   border: none;
+  } 
 }
 
-.policy-link {
+
+.policy__link {
   margin-left: 4px;
   text-decoration: underline;
 
   color: $accent-color;
-}
-
-/*не разрешает пользователю менять размер окна для сообщения*/
-.textaria {
-  resize: none;
 }
 
 /*кнопка формы*/
