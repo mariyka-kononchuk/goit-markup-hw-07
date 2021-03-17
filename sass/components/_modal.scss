@@ -56,7 +56,7 @@
   transition: color 250ms $timing-fn;
 
   &:hover {
-  color: $accent-color;
+    color: $accent-color;
   }
 
   /*тень кнопки закрытия при фокусе*/
@@ -67,7 +67,7 @@
   }
 
   &--color {
-  fill: currentColor;
+    fill: currentColor;
   }
 }
 

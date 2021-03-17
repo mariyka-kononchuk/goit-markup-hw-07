@@ -1,9 +1,9 @@
 /*--ФОРМА В МОДАЛЬНОМ ОКНЕ--*/
 .form {
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   font-weight: 400;
   font-size: 12px;
@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 
   &::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
   }
 }
 
@@ -63,9 +63,9 @@
   transition: color 250ms $timing-fn;
 
   &:focus {
-  outline: none;
-  border: 1px solid $accent-color;
-  caret-color: $accent-color;
+    outline: none;
+    border: 1px solid $accent-color;
+    caret-color: $accent-color;
   }
 }
 
@@ -86,7 +86,7 @@
 
   /*изменение цвета иконки при фокусе input*/
   .form__input:focus ~& {
-  color: $accent-color;
+    color: $accent-color;
   }
 }
 
@@ -101,9 +101,9 @@
   resize: none;
 
   &:focus {
-  outline: none;
-  border: 1px solid $accent-color;
-  caret-color: $accent-color;
+    outline: none;
+    border: 1px solid $accent-color;
+    caret-color: $accent-color;
   }
 }
 
@@ -167,12 +167,12 @@
 
   /*при выборе checkbox появляется иконка*/
   .policy__input:checked + & use {
-  display: inline-block;
+    display: inline-block;
   }
 
   /*при выборе checkbox исчезает бордер*/
   .policy__input:checked + & {
-  border: none;
+    border: none;
   } 
 }
 
@@ -195,7 +195,7 @@
 
   &:hover,
   &:focus {
-  background-color: #188ce8;
+    background-color: #188ce8;
   }
 }
 

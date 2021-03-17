@@ -489,7 +489,7 @@ body {
   white-space: nowrap;
 }
 
-.contacts-nav__item {
+.contacts-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -689,7 +689,7 @@ body {
 
 /*члены команды*/
 /*сетка*/
-.team-member {
+.team__item {
   -ms-flex-preferred-size: calc(100% / 4 - 30px);
       flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
@@ -697,10 +697,10 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /*обертка подписей и иконок соцсетей под фото*/
 }
 
-.team-member__meta {
+/*обертка подписей и иконок соцсетей под фото*/
+.team__box {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -708,7 +708,7 @@ body {
   background-color: #ffffff;
 }
 
-.team-member__name {
+.team__name {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -716,7 +716,7 @@ body {
   text-align: center;
 }
 
-.team-member__position {
+.team__position {
   margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
@@ -905,10 +905,10 @@ body {
 
 /*--ФОРМА В МОДАЛЬНОМ ОКНЕ--*/
 .form {
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.167;
@@ -1148,18 +1148,6 @@ body {
   padding-bottom: 60px;
 }
 
-.footer p {
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 9px;
-}
-
-.footer p:last-child {
-  margin-bottom: 0;
-}
-
 /*адрес в футере*/
 .footer-address {
   display: -webkit-box;
@@ -1172,6 +1160,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer-address__text {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 9px;
+}
+
+.footer-address__list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-address__contacts {
@@ -1239,6 +1244,15 @@ body {
 
 /*кнопка формы футера*/
 .footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1249,21 +1263,8 @@ body {
   margin-left: 10px;
 }
 
-/*позиционирование контента кнопки*/
-.footer-button-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /*список радио-кнопок*/
-.button-list {
+.filters-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1276,17 +1277,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   padding: 0;
-  padding-bottom: 16px;
 }
 
 /*расстояние между кнопками, кроме последней*/
-.button-list__item:not(:last-child) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-list__button {
+.filters-list__button {
   display: inline-block;
   border-radius: 4px;
   border-width: 0;
@@ -1310,7 +1310,7 @@ body {
   /*изменение цвета кнопки при наведении*/
 }
 
-.button-list__button:hover, .button-list__button:focus {
+.filters-list__button:hover, .filters-list__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1319,7 +1319,7 @@ body {
 }
 
 /*примеры работ - портфолио*/
-.pfl__list {
+.portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,7 +1332,7 @@ body {
 }
 
 /*сетка*/
-.pfl__item {
+.product {
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -1341,7 +1341,7 @@ body {
 }
 
 /*проекты в портфолио*/
-.product {
+.product__link {
   color: #212121;
   display: block;
   -webkit-transition: -webkit-box-shadow 250px cubic-bezier(0.4, 0, 0.2, 1);
@@ -1351,7 +1351,7 @@ body {
   /*появление тени при наведении на карточку*/
 }
 
-.product:hover, .product:focus {
+.product__link:hover, .product__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;

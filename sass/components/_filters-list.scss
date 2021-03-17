@@ -1,22 +1,21 @@
 /*список радио-кнопок*/
-.button-list {
+.filters-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   padding: 0;
-  padding-bottom: 16px;
 }
 
 /*расстояние между кнопками, кроме последней*/
-.button-list__item:not(:last-child) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-list__button {
+.filters-list__button {
   display: inline-block;
 
   border-radius: 4px;

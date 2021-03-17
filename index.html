@@ -59,7 +59,9 @@
       <section class="hero">
         <div class="container hero__content">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <a class="button" href="#" data-modal-open>Заказать услугу</a>
+          <button type="submit" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -69,9 +71,11 @@
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features__list">
             <li class="features__item">
-              <svg class="features__icon">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+              <div class="features__icon">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="features__subtitle">Внимание к деталям</h3>
               <p class="features__descr">
                 Идейные соображения, а также начало повседневной работы по
@@ -79,9 +83,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
+              <div class="features__icon">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features__subtitle">Пунктуальность</h3>
               <p class="features__descr">
                 Задача организации, в особенности же рамки и место обучения
@@ -89,9 +95,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
+              <div class="features__icon">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features__subtitle">Планирование</h3>
               <p class="features__descr">
                 Равным образом консультация с широким активом в значительной
@@ -99,9 +107,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
+              <div class="features__icon">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features__subtitle">Современные технологии</h3>
               <p class="features__descr">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -138,11 +148,11 @@
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
-            <li class="team-member">
+            <li class="team__item">
               <img src="./images/igor.jpg" alt="Игорь Демьяненко" />
-              <div class="team-member__meta">
-                <h3 class="team-member__name">Игорь Демьяненко</h3>
-                <p class="team-member__position">Product designer</p>
+              <div class="team__box">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p class="team__position">Product designer</p>
                 <ul class="social-list">
                   <li>
                     <a class="social-list__link" href="#">
@@ -175,11 +185,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img src="./images/olga.jpg" alt="Ольга Репина" />
-              <div class="team-member__meta">
-                <h3 class="team-member__name">Ольга Репина</h3>
-                <p class="team-member__position">Frontend Developer</p>
+              <div class="team__box">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p class="team__position">Frontend Developer</p>
                 <ul class="social-list">
                   <li>
                     <a class="social-list__link" href="#">
@@ -212,11 +222,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img src="./images/nikolaj.jpg" alt="Николай Тарасов" />
-              <div class="team-member__meta">
-                <h3 class="team-member__name">Николай Тарасов</h3>
-                <p class="team-member__position">Marketing</p>
+              <div class="team__box">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p class="team__position">Marketing</p>
                 <ul class="social-list">
                   <li>
                     <a class="social-list__link" href="#">
@@ -249,11 +259,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img src="./images/mihayil.jpg" alt="Михаил Ермаков" />
-              <div class="team-member__meta">
-                <h3 class="team-member__name">Михаил Ермаков</h3>
-                <p class="team-member__position">UI Designer</p>
+              <div class="team__box">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p class="team__position">UI Designer</p>
                 <ul class="social-list">
                   <li>
                     <a class="social-list__link" href="#">
@@ -352,7 +362,7 @@
                 <input
                   type="text"
                   name="user-name"
-                  id="name"
+                  id="user-name"
                   class="form__input"
                 />
                 <svg class="form__icon" width="18px" height="18px">
@@ -427,17 +437,21 @@
             <span class="logo--color">Web</span>Studio
           </a>
           <address>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <p>
-              <a href="mailto:info@example.com" class="footer-address__contacts"
-                >info@example.com</a
-              >
-            </p>
-            <p>
-              <a href="tel:+380991111111" class="footer-address__contacts"
-                >+38 099 111 11 11</a
-              >
-            </p>
+            <p class="footer-address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-address__contacts"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-address__contacts"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
           </address>
         </div>
         <div class="footer-social">
@@ -501,12 +515,10 @@
               />
             </div>
             <button type="submit" class="button footer__button">
-              <div class="footer-button-flex">
-                <span>Подписаться</span>
-                <svg class="footer-form__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </div>
+              <span>Подписаться</span>
+              <svg class="footer-form__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>

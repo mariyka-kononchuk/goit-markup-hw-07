@@ -57,39 +57,39 @@
     </header>
 
     <main>
-      <section class="section pfl">
+      <section class="section portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
 
           <!-- Радио-кнопки -->
-          <ul class="button-list">
-            <li class="button-list__item">
-              <button type="button" class="button-list__button">Все</button>
+          <ul class="filters-list">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">Все</button>
             </li>
-            <li class="button-list__item">
-              <button type="button" class="button-list__button">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
                 Веб-сайты
               </button>
             </li>
-            <li class="button-list__item">
-              <button type="button" class="button-list__button">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
                 Приложения
               </button>
             </li>
-            <li class="button-list__item">
-              <button type="button" class="button-list__button">Дизайн</button>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">Дизайн</button>
             </li>
-            <li class="button-list__item">
-              <button type="button" class="button-list__button">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
                 Маркетинг
               </button>
             </li>
           </ul>
 
           <!-- Портфолио -->
-          <ul class="pfl__list">
-            <li class="pfl__item">
-              <a class="product" href="#">
+          <ul class="portfolio-list">
+            <li class="product">
+              <a class="product__link" href="#">
                 <div class="product__thumb">
                   <img src="./images/technokrjak.jpg" alt="Технокряк" />
                   <h3 class="product__descr">
@@ -104,8 +104,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img
                     src="./images/new-orlean.jpg"
@@ -125,8 +125,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="" class="product">
+            <li class="product">
+              <a href="" class="product__link">
                 <div class="product__thumb">
                   <img src="./images/seafood.jpg" alt="Ресторан Seafood" />
                   <h3 class="product__descr">
@@ -141,8 +141,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img src="./images/prime.jpg" alt="Проект Prime" />
                   <h3 class="product__descr">
@@ -157,8 +157,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product_link">
                 <div class="product__thumb">
                   <img src="./images/boxes.jpg" alt="Проект Boxes" />
                   <h3 class="product__descr">
@@ -173,8 +173,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img
                     src="./images/inspiration.jpg"
@@ -192,8 +192,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img
                     src="./images/limited.jpg"
@@ -211,8 +211,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img src="./images/lab.jpg" alt="Проект LAB" />
                   <h3 class="product__descr">
@@ -227,8 +227,8 @@
                 </div>
               </a>
             </li>
-            <li class="pfl__item">
-              <a href="#" class="product">
+            <li class="product">
+              <a href="#" class="product__link">
                 <div class="product__thumb">
                   <img src="./images/business.jpg" alt="Growing Business" />
                   <h3 class="product__descr">
@@ -255,17 +255,21 @@
             <span class="logo--color">Web</span>Studio
           </a>
           <address>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <p>
-              <a href="mailto:info@example.com" class="footer-address__contacts"
-                >info@example.com</a
-              >
-            </p>
-            <p>
-              <a href="tel:+380991111111" class="footer-address__contacts"
-                >+38 099 111 11 11</a
-              >
-            </p>
+            <p class="footer-address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-address__contacts"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-address__contacts"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
           </address>
         </div>
         <div class="footer-social">
@@ -329,12 +333,10 @@
               />
             </div>
             <button type="submit" class="button footer__button">
-              <div class="footer-button-flex">
-                <span>Подписаться</span>
-                <svg class="footer-form__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </div>
+              <span>Подписаться</span>
+              <svg class="footer-form__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>

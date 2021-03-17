@@ -35,16 +35,6 @@
   padding-bottom: 60px;
 }
 
-.footer p {
-  display: inline-block;
-  width: fit-content;
-  margin-bottom: 9px;
-}
-
-.footer p:last-child {
-  margin-bottom: 0;
-}
-
 /*адрес в футере*/
 .footer-address {
   display: flex;
@@ -52,8 +42,23 @@
   justify-content: center;
 }
 
+.footer-address__text {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 9px;
+}
+
+.footer-address__list {
+  margin:0;
+  padding: 0;
+}
+.footer-address__item:not(:last-child){
+  margin-bottom: 9px;
+}
+
 .footer-address__contacts {
   padding: 0;
+  
   color: $footer-text-color;
 
   transition: color 250ms $timing-fn;
@@ -113,22 +118,21 @@
 
 /*кнопка формы футера*/
 .footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
+
 }
 
 .footer-form__icon {
   margin-left: 10px;
 }
 
-/*позиционирование контента кнопки*/
-.footer-button-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 

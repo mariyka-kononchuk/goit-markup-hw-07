@@ -7,7 +7,7 @@
   white-space: nowrap;
 }
 
-.contacts-nav__item {
+.contacts-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
